@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/scss/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>brew.g</title>
   </head>
   <body>
@@ -111,11 +115,14 @@
       </p>
 
       <div class="about__content">
-        <img
-          class="about__content-image lazyload"
-          src="https://placekitten.com/801/400"
-          alt=""
-        />
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
         <h2 class="about__content-title">Hey, I'm Hebrews!</h2>
         <p class="about__content-text">
           Thanks for visiting my website! I am a Los Angeles based web
@@ -132,4 +139,14 @@
     </div>
   </body>
   <script src="/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      direction: "horizontal",
+
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  </script>
 </html>
