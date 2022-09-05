@@ -255,48 +255,24 @@
     align-items: center;
     text-align: center;
 
+    // .about__content-image
     &-image {
-      width: 80%;
-      display: block;
-      border: 5px solid #222;
-      border-radius: 4px;
-      margin-bottom: 25px;
+      // .about__content-image img
+      img {
+        width: 80%;
+        max-height: 1000px;
+        border: 5px solid #222;
+        border-radius: 25px;
+        margin-bottom: 50px;
 
-      @media only screen and (max-width: 900px) {
-        width: 100%;
-      }
-    }
-
-    .swiper {
-      width: 80%;
-      height: 500px;
-      margin-bottom: 40px;
-
-      @media only screen and (max-width: 900px) {
-        width: 100%;
-      }
-
-      &-slide {
-        &__image {
-          background-image: url("/assets/memoji.png");
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
+        @media only screen and (max-width: 900px) {
           width: 100%;
-          height: 400px;
-        }
-
-        &__test {
-          width: 80%;
-          height: auto;
-
-          @media only screen and (max-width: 900px) {
-            width: 100%;
-          }
+          max-height: 500px;
         }
       }
     }
 
+    // .about__content-title
     &-title {
       font-size: 7em;
       font-weight: 700;
@@ -319,6 +295,7 @@
       }
     }
 
+    // .about__content-text
     &-text {
       font-size: 1.5em;
       line-height: 1.6em;
@@ -329,6 +306,37 @@
 
       @media only screen and (max-width: 900px) {
         width: 100%;
+      }
+    }
+
+    // .about__content-icons
+    &-icons {
+      display: flex;
+      justify-content: center;
+      margin: 15px 0;
+
+      // .about__content-icons-link
+      &-link {
+        margin: 0 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+
+        // .about__content-icons-link.linked-in
+        &.linked-in {
+          background-image: url("/assets/icons/linked_in.svg");
+        }
+
+        // .about__content-icons-link.github
+        &.github {
+          background-image: url("/assets/icons/github.svg");
+        }
+
+        // .about__content-icons-link.email
+        &.email {
+          background-image: url("/assets/icons/email.svg");
+        }
       }
     }
   }
