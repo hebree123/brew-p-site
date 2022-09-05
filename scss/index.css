@@ -367,14 +367,14 @@
 }
 
 .about__content-icons-link.linked-in {
-  background-image: url("/assets/icons/linked_in.svg");
+  background-image: url("assets/icons/linked_in.svg");
 }
 
 .about__content-icons-link.github {
-  background-image: url("/assets/icons/github.svg");
+  background-image: url("assets/icons/github.svg");
 }
 
 .about__content-icons-link.email {
-  background-image: url("/assets/icons/email.svg");
+  background-image: url("assets/icons/email.svg");
 }
 /*# sourceMappingURL=index.css.map */
